@@ -1,0 +1,14 @@
+# Database connection info
+spring.datasource.url=jdbc:(postgresql, mysql):/IP:PORT/DB
+spring.datasource.username=USERNAME
+spring.datasource.password=PASSWORD
+
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation= true
+spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.(PostgresSQLDialect, MySQL5InnoDBDialect)
+
+# Hibernate ddl auto
+spring.jpa.hibernate.ddl-auto=(create, create-drop, validate, update)
+
+# App properties
+dashboard.api.jwtSecret=(secretKeyName)
+dashboard.api.jwtExpirationMs=(Expiration in MS)
