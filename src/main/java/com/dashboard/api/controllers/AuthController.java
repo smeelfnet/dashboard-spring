@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dashboard.api.models.ERole;
-import com.dashboard.api.models.Role;
-import com.dashboard.api.models.User;
+import com.dashboard.api.models.auth.ERole;
+import com.dashboard.api.models.auth.Role;
+import com.dashboard.api.models.auth.User;
 import com.dashboard.api.payload.request.LoginRequest;
 import com.dashboard.api.payload.request.SignupRequest;
 import com.dashboard.api.payload.response.JwtResponse;
@@ -30,7 +30,7 @@ import com.dashboard.api.payload.response.MessageResponse;
 import com.dashboard.api.repositories.RoleRepository;
 import com.dashboard.api.repositories.UserRepository;
 import com.dashboard.api.security.jwt.JwtUtils;
-import com.dashboard.api.security.services.UserDetailsImpl;
+import com.dashboard.api.security.services.Impl.UserDetailsImpl;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController

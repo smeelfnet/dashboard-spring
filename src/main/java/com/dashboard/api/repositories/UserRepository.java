@@ -1,6 +1,6 @@
 package com.dashboard.api.repositories;
 
-import com.dashboard.api.models.User;
+import com.dashboard.api.models.auth.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
