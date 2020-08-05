@@ -55,7 +55,7 @@ jobs:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   docker:
-    name: Publish - Docker Hub
+    name: Publish Develop - Docker Hub
     runs-on: ubuntu-20.04
     needs: [test, sonar]
     env:
@@ -70,6 +70,6 @@ jobs:
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
       - name: Build Docker image
-        run: docker build -t $REPO:latest -t $REPO:${GITHUB_SHA::8} .
+        run: docker build -t $REPO:develop -t $REPO:develop-${GITHUB_SHA::8} .
       - name: Publish Docker image
         run: docker push $REPO
