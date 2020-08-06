@@ -2,7 +2,7 @@ package com.dashboard.api.security;
 
 import com.dashboard.api.security.jwt.AuthEntryPointJwt;
 import com.dashboard.api.security.jwt.AuthTokenFilter;
-import com.dashboard.api.security.services.UserDetailsServiceImpl;
+import com.dashboard.api.security.services.Impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

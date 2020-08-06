@@ -1,7 +1,8 @@
-package com.dashboard.api.security.services;
+package com.dashboard.api.security.services.Impl;
 
-import com.dashboard.api.models.User;
+import com.dashboard.api.models.auth.User;
 import com.dashboard.api.repositories.UserRepository;
+import com.dashboard.api.security.services.Impl.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

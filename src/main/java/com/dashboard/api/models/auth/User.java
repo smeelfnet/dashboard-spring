@@ -1,4 +1,4 @@
-package com.dashboard.api.models;
+package com.dashboard.api.models.auth;
 
 import java.util.HashSet;
 import java.util.Set;

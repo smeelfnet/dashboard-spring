@@ -1,6 +1,6 @@
 package com.dashboard.api.security.jwt;
 
-import com.dashboard.api.security.services.UserDetailsServiceImpl;
+import com.dashboard.api.security.services.Impl.UserDetailsServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,6 @@ import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.slf4j.Logger;
 
 import java.io.IOException;
 

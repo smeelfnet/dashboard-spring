@@ -1,7 +1,7 @@
 package com.dashboard.api.repositories;
 
-import com.dashboard.api.models.ERole;
-import com.dashboard.api.models.Role;
+import com.dashboard.api.models.auth.ERole;
+import com.dashboard.api.models.auth.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

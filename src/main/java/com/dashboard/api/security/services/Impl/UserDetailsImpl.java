@@ -1,6 +1,6 @@
-package com.dashboard.api.security.services;
+package com.dashboard.api.security.services.Impl;
 
-import com.dashboard.api.models.User;
+import com.dashboard.api.models.auth.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

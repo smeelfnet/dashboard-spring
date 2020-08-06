@@ -1,4 +1,4 @@
-package com.dashboard.api.models;
+package com.dashboard.api.models.auth;
 
 public enum ERole {
     ROLE_USER,
