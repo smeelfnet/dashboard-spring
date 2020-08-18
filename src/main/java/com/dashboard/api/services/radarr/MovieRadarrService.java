@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface MovieRadarrService {
 
-    List<MovieRadarr> findMovie();
+    List<MovieRadarr> findMovies();
     MovieRadarr findById(Long id);
 }

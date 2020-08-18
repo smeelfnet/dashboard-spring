@@ -30,7 +30,7 @@ public class MovieRadarrServiceImpl implements MovieRadarrService {
     private String radarrApiBaseUrl;
 
     @Override
-    public List<MovieRadarr> findMovie() {
+    public List<MovieRadarr> findMovies() {
         try {
             String uriBuilder = createRadarrUrl(FIND_MOVIE);
             HttpResponse<JsonNode> jsonResponse = Unirest.get(uriBuilder).asJson();
@@ -38,7 +38,7 @@ public class MovieRadarrServiceImpl implements MovieRadarrService {
             if(jsonResponse.getStatus() != HttpStatus.SC_OK) {
                 return null;
             }
-            String jsonList = jsonResponse.getBody().getObject().toString();
+            String jsonList = jsonResponse.getBody().toString();
             ObjectMapper objectMapper = new ObjectMapper();
             List<MovieRadarr> movieRadarrList = objectMapper.readValue(jsonList, new TypeReference<List<MovieRadarr>>() {
             } );
