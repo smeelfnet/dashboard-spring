@@ -1,6 +1,7 @@
 package com.dashboard.api.controllers;
 
 import com.dashboard.api.models.radarr.MovieRadarr;
+import com.dashboard.api.models.tmdb.MovieTmdb;
 import com.dashboard.api.services.radarr.MovieRadarrService;
 import com.dashboard.api.services.tmdb.ActorTmdbService;
 import com.dashboard.api.services.tmdb.MovieTmdbService;
@@ -27,13 +28,12 @@ public class MovieController {
     private MovieRadarrService movieRadarrService;
 
     @GetMapping()
-    public ModelAndView getMovie() {
-        List<MovieRadarr> movieRadarrList = movieRadarrService.findMovies();
+    public List<MovieRadarr> getMovie() {
+        return  movieRadarrService.findMovies();
+    }
 
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("movies", movieRadarrList);
-        modelAndView.setViewName("/api/v1/movie");
-
-        return modelAndView;
+    @GetMapping("/external")
+    public List<MovieTmdb> getExternalMovie() {
+            return movieTmdbService.findNowPlaying();
     }
 }

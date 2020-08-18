@@ -40,7 +40,7 @@ public class MovieTmdbServiceImpl implements MovieTmdbService {
             if(jsonResponse.getStatus() != HttpStatus.SC_OK) {
                 return null;
             }
-            String jsonList = jsonResponse.getBody().getObject().get("result").toString();
+            String jsonList = jsonResponse.getBody().getObject().get("results").toString();
             ObjectMapper objectMapper = new ObjectMapper();
             List<MovieTmdb> movieTmdbList = objectMapper.readValue(jsonList, new TypeReference<List<MovieTmdb>>(){} );
 
