@@ -18,6 +18,7 @@ public class MovieFile {
     public Long movieId;
     @JsonProperty("relative_path")
     public String relativePath;
+    @JsonProperty("size")
     public Long size;
     @JsonProperty("date_added")
     public String dateAdded;

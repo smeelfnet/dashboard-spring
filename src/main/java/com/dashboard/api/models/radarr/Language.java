@@ -14,7 +14,9 @@ import lombok.Data;
 @Data
 public class Language {
 
+    @JsonProperty("id")
     public Long id;
+    @JsonProperty("name")
     public String name;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();

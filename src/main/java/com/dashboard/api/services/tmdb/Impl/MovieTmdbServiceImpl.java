@@ -34,7 +34,7 @@ public class MovieTmdbServiceImpl implements MovieTmdbService {
     @Override
     public List<MovieTmdb> findNowPlaying() {
         try {
-            String uriBuilder = createTmdbUrl(NOW_PLAYING_MOVIE);
+            var uriBuilder = createTmdbUrl(NOW_PLAYING_MOVIE);
             HttpResponse<JsonNode> jsonResponse = Unirest.get(uriBuilder).asJson();
 
             if(jsonResponse.getStatus() != HttpStatus.SC_OK) {

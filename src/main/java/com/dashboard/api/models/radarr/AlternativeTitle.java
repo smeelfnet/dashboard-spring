@@ -18,13 +18,17 @@ public class AlternativeTitle {
     public String sourceType;
     @JsonProperty("movie_id")
     public Long movieId;
+    @JsonProperty("title")
     public String title;
     @JsonProperty("source_id")
     public Long sourceId;
+    @JsonProperty("votes")
     public Long votes;
     @JsonProperty("vote_count")
     public Long voteCount;
+    @JsonProperty("language")
     public Language language;
+    @JsonProperty("id")
     public Long id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();

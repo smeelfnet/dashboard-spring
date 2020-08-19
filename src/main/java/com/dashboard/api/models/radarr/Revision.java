@@ -14,7 +14,9 @@ import lombok.Data;
 @Data
 public class Revision {
 
+    @JsonProperty("version")
     public Long version;
+    @JsonProperty("real")
     public Long real;
     @JsonProperty("is_repack")
     public Boolean isRepack;

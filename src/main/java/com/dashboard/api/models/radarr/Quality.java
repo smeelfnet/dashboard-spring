@@ -14,7 +14,9 @@ import lombok.Data;
 @Data
 public class Quality {
 
+    @JsonProperty("quality")
     public Quality_ quality;
+    @JsonProperty("revision")
     public Revision revision;
     @JsonProperty("hardcoded_subs")
     public String hardcodedSubs;

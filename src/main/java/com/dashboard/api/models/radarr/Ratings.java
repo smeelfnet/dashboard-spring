@@ -14,7 +14,9 @@ import lombok.Data;
 @Data
 public class Ratings {
 
+    @JsonProperty("votes")
     public Long votes;
+    @JsonProperty("value")
     public Float value;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();

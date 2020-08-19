@@ -16,6 +16,7 @@ public class Image {
 
     @JsonProperty("cover_type")
     public String coverType;
+    @JsonProperty("url")
     public String url;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();

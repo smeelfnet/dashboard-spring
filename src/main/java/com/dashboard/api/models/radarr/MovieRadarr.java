@@ -7,12 +7,11 @@ import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 public class MovieRadarr {
 
+    @JsonProperty("title")
     public String title;
     @JsonProperty("alternative_titles")
     public List<AlternativeTitle> alternativeTitles = null;
@@ -22,24 +21,33 @@ public class MovieRadarr {
     public String sortTitle;
     @JsonProperty("size_on_disk")
     public Long sizeOnDisk;
+    @JsonProperty("status")
     public String status;
+    @JsonProperty("overview")
     public String overview;
     @JsonProperty("in_cinemas")
     public String inCinemas;
     @JsonProperty("physical_release")
     public String physicalRelease;
+    @JsonProperty("images")
     public List<Image> images = null;
+    @JsonProperty("website")
     public String website;
+    @JsonProperty("downloaded")
     public Boolean downloaded;
+    @JsonProperty("year")
     public Long year;
     @JsonProperty("has_file")
     public Boolean hasFile;
     @JsonProperty("you_tube_trailer_id")
     public String youTubeTrailerId;
+    @JsonProperty("studio")
     public String studio;
+    @JsonProperty("path")
     public String path;
     @JsonProperty("profile_id")
     public Long profileId;
+    @JsonProperty("monitored")
     public Boolean monitored;
     @JsonProperty("minimum_availability")
     public String minimumAvailability;
@@ -47,6 +55,7 @@ public class MovieRadarr {
     public Boolean isAvailable;
     @JsonProperty("folder_name")
     public String folderName;
+    @JsonProperty("runtime")
     public Long runtime;
     @JsonProperty("last_info_sync")
     public String lastInfoSync;
@@ -58,10 +67,15 @@ public class MovieRadarr {
     public Long tmdbId;
     @JsonProperty("title_slug")
     public String titleSlug;
+    @JsonProperty("certification")
     public String certification;
+    @JsonProperty("genres")
     public List<String> genres = null;
+    @JsonProperty("tags")
     public List<Object> tags = null;
+    @JsonProperty("added")
     public String added;
+    @JsonProperty("ratings")
     public Ratings ratings;
     @JsonProperty("movie_file")
     public MovieFile movieFile;

@@ -32,7 +32,9 @@ public class MediaInfo {
     public String videoColourPrimaries;
     @JsonProperty("video_transfer_characteristics")
     public String videoTransferCharacteristics;
+    @JsonProperty("width")
     public Long width;
+    @JsonProperty("height")
     public Long height;
     @JsonProperty("audio_format")
     public String audioFormat;
@@ -60,6 +62,7 @@ public class MediaInfo {
     public Float videoFps;
     @JsonProperty("audio_languages")
     public String audioLanguages;
+    @JsonProperty("subtitles")
     public String subtitles;
     @JsonProperty("scan_type")
     public String scanType;

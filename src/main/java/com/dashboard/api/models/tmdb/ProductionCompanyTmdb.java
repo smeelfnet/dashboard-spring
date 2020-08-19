@@ -5,7 +5,9 @@ import lombok.Data;
 
 @Data
 public class ProductionCompanyTmdb {
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("id")
     private Long id;
     @JsonProperty("logo_path")
     private String logoPath;

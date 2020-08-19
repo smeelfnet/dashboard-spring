@@ -14,10 +14,15 @@ import lombok.Data;
 @Data
 public class Quality_ {
 
+    @JsonProperty("id")
     public Long id;
+    @JsonProperty("name")
     public String name;
+    @JsonProperty("source")
     public String source;
+    @JsonProperty("resolution")
     public Long resolution;
+    @JsonProperty("modifier")
     public String modifier;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
